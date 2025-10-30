@@ -1,0 +1,55 @@
+body {
+    display: grid;
+    grid-template: auto / auto;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+}
+
+body nav {
+    display: flex;
+    color: white;
+    font-size: larger;
+    background-color: rgb(61, 59, 59);
+    height: 100px;
+    padding: 10px;
+}
+
+header p {
+    font-size: medium;
+}
+
+.header-links {
+    display: flex;
+    align-self: center;
+    padding: 10px;
+    height: 20px;
+    justify-content: space-around;
+    background-color: rgb(218, 203, 203);
+}
+
+main {
+    display: grid;
+    align-self: auto;
+    background-color: rgb(138, 133, 133);
+    color: black;
+    height: 250px;
+    text-indent: 20px;
+}
+
+main div {
+    background-color: aliceblue;
+    grid-column: 3/4;
+    text-indent: 20px;
+}
+
+footer {
+    display: grid;
+    align-self: auto;
+    background-color: rgb(61, 59, 59);
+    height: 150px;
+}
+
+footer p {
+    color: rgb(255, 255, 255);
+    justify-self: center;
+}
