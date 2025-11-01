@@ -1,0 +1,60 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    display: block;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+header p {
+    display: flex;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    height: 70px;
+    align-items: center;
+    justify-self: center;
+    font-size: x-large;
+    top: 10px;
+    color: white;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.header-links {
+    display: block;
+    text-decoration: none;
+    background-color: gray;
+    height: 30px;
+    padding: 10px;
+}
+
+.header-links li:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.header-links a:link, a:visited, a:hover a:active {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: 1000;
+    font-size: x-large;
+    bottom: 60%;
+}
+
+main {
+    width: 10px;
+    /* justify-self: center; */
+    background-color: rgb(133, 99, 255);
+}
+
+section {
+    display: grid;
+}
