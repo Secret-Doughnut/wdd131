@@ -103,3 +103,10 @@ main {
     justify-self: center;
     border-bottom: solid;
 }
+
+.web-dev-links {
+   position: relative;
+   font-size: larger;
+   top: 120px;
+   line-height: 30px;
+}
