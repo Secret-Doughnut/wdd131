@@ -3,7 +3,13 @@ body {
     padding: 30px;
 }
 
-header, footer {
+header {
+    background-color: rgb(165, 67, 67);
+    width: 1090px;
+    justify-self: center;
+}
+
+footer {
     background-color: rgb(165, 67, 67);
     width: 1090px;
     justify-self: center;
@@ -46,19 +52,19 @@ header ul {
 .header-links {
     display: block;
     text-decoration: none;
-    background-color: rgb(143, 116, 116);
+    background-color: rgb(243, 207, 207);
     height: 30px;
     padding: 10px;
 }
 
 .header-links li:hover {
     text-decoration: underline;
-    text-decoration-color: white;
+    text-decoration-color: rgb(0, 0, 0);
 }
 
 .header-links a:link, a:visited, a:hover a:active {
     position: relative;
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: 1000;
     font-size: x-large;
@@ -82,11 +88,21 @@ main {
 
 .card h1 {
     position: relative;
-    background-color: rgb(255, 151, 151);
+    background-color: rgb(255, 172, 172);
     border-radius: 15px 15px 1px 1px;
     text-align: center;
     bottom: 4%;
     margin-top: 25px;
+}
+
+.card h3 {
+    position: relative;
+    background-color: rgb(255, 172, 172);
+    border-radius: 15px 15px 1px 1px;
+    text-align: center;
+    bottom: 4%;
+    margin-top: 25px;
+    font-size: xx-large;
 }
 
 .card img {
@@ -125,4 +141,8 @@ main {
    font-size: larger;
    top: 120px;
    line-height: 30px;
+}
+
+#course-title {
+    color: rgb(213, 253, 253);
 }
