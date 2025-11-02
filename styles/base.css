@@ -3,8 +3,8 @@ body {
     padding: 30px;
 }
 
-header {
-    background-color: rgb(0, 0, 0);
+header, footer {
+    background-color: rgb(165, 67, 67);
     width: 1090px;
     justify-self: center;
 }
@@ -20,6 +20,22 @@ header p {
     color: white;
 }
 
+footer p {
+    display: flex;
+    position: relative;
+    height: 10px;
+    align-items: center;
+    justify-self: center;
+    font-size: x-large;
+    padding: 10px;
+    color: white;
+}
+
+.lastModified {
+    position: relative;
+    top: 200px;
+}
+
 header ul {
     list-style: none;
     display: flex;
@@ -30,7 +46,7 @@ header ul {
 .header-links {
     display: block;
     text-decoration: none;
-    background-color: gray;
+    background-color: rgb(143, 116, 116);
     height: 30px;
     padding: 10px;
 }
