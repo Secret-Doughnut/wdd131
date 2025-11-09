@@ -26,12 +26,9 @@
         padding-right: 10px;
     }
 
-    /* .navigation a:hover {
-        position: relative;
-        border: 1px solid white;
-        width: 60%;
-        right: 0%;
-} */
+    #menu.open::before {
+        display: none;
+    }
 
     .top-bar {
         display: block;
