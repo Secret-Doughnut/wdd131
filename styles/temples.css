@@ -14,7 +14,7 @@ footer p {
     color: white;
 }
 
-header p {
+header p, h2 {
     color: white;
     font-size: x-large;
     padding-left: 10px;
@@ -103,3 +103,4 @@ figure img {
 figure figcaption {
     justify-self: center;
 }
+
