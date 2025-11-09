@@ -1,0 +1,54 @@
+@media screen and (min-width: 900px) {
+    .temple-pictures {
+        display: grid;
+        grid-template: 1fr 1fr/ 1fr 1fr;
+}
+    figure img {
+        width: 400px;
+        height: auto;
+}
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: flex;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        width: 0%;
+        top: 0%;
+        justify-content: space-around;
+        background-color: transparent;
+        padding-right: 10px;
+    }
+
+    /* .navigation a:hover {
+        position: relative;
+        border: 1px solid white;
+        width: 60%;
+        right: 0%;
+} */
+
+    .top-bar {
+        display: block;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .temple-pictures {
+        display: grid;
+        grid-template: 1fr 1fr/ 1fr 1fr 1fr;
+}
+    figure img {
+        width: 325px;
+        height: auto;
+}
+
+}
