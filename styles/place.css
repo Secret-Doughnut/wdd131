@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Placeholder */
+}
+
+body {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+}
+
+.icon {
+    display: block;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+    .correct-image {
+        width: 98.5vw;
+        height: 500px;
+    }
+    
+    .icon {
+        
+    }
+    
+    .icon::after{
+        content: "🌙";
+        font-size: 50px;
+        display: inline-block;
+    }
+    
+}
