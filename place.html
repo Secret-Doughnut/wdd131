@@ -21,13 +21,16 @@
         <h1>Sweden</h1>
     </header>
     <main>
-        <picture>
-            <source srcset="images/sweden-big-hero.webp" media="(min-width: 1000px)">
-            <img src="images/sweden-hero.webp" alt="A red building that lives in Sweden" width="500" height="750"
-            class="correct-image">
-        </picture>
-        <section>
-            <ul>
+        <div class="overlay">
+            <picture>
+                <source srcset="images/sweden-big-hero.webp" media="(min-width: 1000px)">
+                <img src="images/sweden-hero.webp" alt="A red building that lives in Sweden" width="500" height="750"
+                    class="correct-image">
+            </picture>
+        </div>
+        <section class="fact-card">
+            <h3>Data</h3>
+            <ul class="data">
                 <li>Area: 173,860 mi²</li>
                 <li>Population: 10,733,867</li>
                 <li>Capital: Stockholm</li>
@@ -35,16 +38,18 @@
                 <li>Currency: The Swedish Krona</li>
                 <li>Time Zone: UTC+1</li>
                 <li>Calling Code: +46</li>
-                <li>Iternet TLD: .se</li>
+                <li>Internet TLD: .se</li>
             </ul>
         </section>
-        <section>
+        <section class="weather-card">
             <h2>Weather</h2>
             <img class="icon" src="images/weather-icon.svg" alt="Moon image">
+            <p class="emoji">🌙</p>
             <ul>
                 <li>Temperature: 32 °F</li>
                 <li>Conditions: Clear</li>
                 <li>Wind: 7 MPH</li>
+                <li>Wind Chill: </li>
             </ul>
         </section>
     </main>
