@@ -47,10 +47,6 @@ h1, h2, h3 {
     justify-self: center;
 }
 
-.emoji {
-    display: none;
-}
-
 ul {
     justify-self: center;
     margin: 10px;
@@ -75,17 +71,12 @@ ul {
         display: none;
     }
 
-    .emoji {
-        display: block;
-        font-size: xx-large;
-        justify-self: center;
-    }
-
     section {
         background-color: rgba(var(--swedish-blue), 0.9);
         color: white;
         position: absolute;
         width: 30vw;
+        border-radius: 40px;
     }
 
     .fact-card {
@@ -113,5 +104,9 @@ ul {
     h2, h3 {
         background-color: rgb(var(--swedish-yellow));
         color: rgb(0, 0, 0);
+    }
+
+    h2::after {
+        content: "🌙";
     }
 }
