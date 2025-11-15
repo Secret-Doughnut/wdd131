@@ -107,6 +107,7 @@ ul {
     }
 
     h2::after {
-        content: "🌙";
+        content: " ⏾";
+        color: black;
     }
 }
