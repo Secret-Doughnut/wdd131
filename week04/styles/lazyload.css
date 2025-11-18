@@ -1,0 +1,21 @@
+h1 {
+    justify-self: center;
+}
+
+img {
+    display: block;
+    justify-self: center;
+    margin: 20px;
+    background-color: black;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
