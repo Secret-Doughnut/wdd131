@@ -78,6 +78,36 @@ const temples = [
   }
 ];
 
+CreateTempleCard();
+
+function CreateTempleCard() {
+  temples.forEach(temple => {
+    let card = document.createElement("section");
+    let name = document.createElement("h3");
+    let location = document.createElement("p");
+    let dedication = document.createElement("p");
+    let area = document.createElement("p");
+    let image = document.createElement("img");
+    let holder = querySelector(".card-section");
+
+    templeName.textContent = temple.templeName;
+    location.innerHTML = `Location: ${temple.location}`;
+    dedication.innerHTML = `Dedicated: ${temple.dedicated}`;
+    area.innerHTML = `Area: ${temple.area} square feet`;
+    image.setAttribute("src", temple.imageUrl);
+    image.setAttribute("alt", `${temple.templeName} Temple`);
+    image.setAttribute("loading", "lazy");
+
+    card.appendChild(templeName);
+    card.appendChild(location);
+    card.appendChild(dedication);
+    card.appendChild(area);
+    card.appendChild(image);
+    holder.appendChild(card);
+
+  });
+}
+
 
 const hamburgerButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
@@ -86,3 +116,4 @@ hamburgerButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamburgerButton.classList.toggle('open');
 });
+
