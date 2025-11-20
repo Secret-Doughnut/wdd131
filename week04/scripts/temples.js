@@ -88,23 +88,23 @@ function CreateTempleCard() {
     let dedication = document.createElement("p");
     let area = document.createElement("p");
     let image = document.createElement("img");
-    let holder = querySelector(".card-section");
-
-    templeName.textContent = temple.templeName;
+    
+    name.textContent = temple.templeName;
     location.innerHTML = `Location: ${temple.location}`;
     dedication.innerHTML = `Dedicated: ${temple.dedicated}`;
     area.innerHTML = `Area: ${temple.area} square feet`;
     image.setAttribute("src", temple.imageUrl);
     image.setAttribute("alt", `${temple.templeName} Temple`);
     image.setAttribute("loading", "lazy");
-
-    card.appendChild(templeName);
+    
+    card.appendChild(name);
     card.appendChild(location);
     card.appendChild(dedication);
     card.appendChild(area);
     card.appendChild(image);
+    
+    let holder = document.querySelector(".card-section");
     holder.appendChild(card);
-
   });
 }
 
