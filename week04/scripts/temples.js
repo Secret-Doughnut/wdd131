@@ -78,10 +78,22 @@ const temples = [
   }
 ];
 
-CreateTempleCard();
+CreateTempleCard(temples);
 
-function CreateTempleCard() {
-  temples.forEach(temple => {
+const links = document.querySelector(".navigation");
+const buttons = links.querySelectorAll("button");
+let buttonClicked = "";
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    const type = button.dataset.type;
+    let buttonClicked = type;
+  })
+})
+
+function CreateTempleCard(filterTemples) {
+  filterTemples.forEach(temple => {
+    // document.querySelector(".card-section").innerHTML = "";
     let card = document.createElement("section");
     let name = document.createElement("h3");
     let location = document.createElement("p");

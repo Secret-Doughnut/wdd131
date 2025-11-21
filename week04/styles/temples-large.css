@@ -1,9 +1,9 @@
 @media screen and (min-width: 900px) {
-    .temple-pictures {
+    .card-section {
         display: grid;
         grid-template: 1fr 1fr/ 1fr 1fr;
 }
-    figure img {
+    .card-section img {
         width: 400px;
         height: auto;
 }
@@ -39,11 +39,11 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .temple-pictures {
+    .card-section {
         display: grid;
         grid-template: 1fr 1fr/ 1fr 1fr 1fr;
 }
-    figure img {
+    .card-section img {
         width: 325px;
         height: auto;
 }

@@ -70,7 +70,7 @@ header p, h2 {
     display: block;
 }
 
-.navigation a {
+.navigation button {
     display: block;
     text-decoration: none;
     color: white;
@@ -79,9 +79,11 @@ header p, h2 {
     text-align: center;
     border: 3px solid transparent;
     transition: border 0.2s;
+    background-color: rgb(165, 67, 67);
+    cursor: pointer;
 }
 
-.navigation a:hover {
+.navigation button:hover {
     background-color: rgb(207, 64, 64);
     border-color: rgb(7, 56, 59);
 }
@@ -90,17 +92,19 @@ main, main h1 {
     justify-self: center;
 }
 
-.temple-pictures {
+.card-section {
     display: grid;
     grid-template: 1fr 1fr/ 1fr;
 }
 
-figure img {
+.card-section img {
     width: 450px;
     height: auto;
 }
 
-figure figcaption {
-    justify-self: center;
+.card-section section {
+    margin: 20px;
+    background-color: rgb(116, 51, 51);
+    color: white;
+    text-align: center;
 }
-
