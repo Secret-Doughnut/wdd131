@@ -54,7 +54,6 @@ header p, h1 {
 }
 
 .navigation {
-    display: flex;
     flex-direction: column;
     position: absolute;
     background-color: rgb(165, 67, 67);
@@ -64,6 +63,10 @@ header p, h1 {
     top: 59px;
     padding-left: 0;
     display: none;
+}
+
+.required-appearntly {
+    display: flex;
 }
 
 .navigation.open {
