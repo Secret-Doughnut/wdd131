@@ -80,20 +80,58 @@ const temples = [
 
 CreateTempleCard(temples);
 
-const links = document.querySelector(".navigation");
-const buttons = links.querySelectorAll("button");
-let buttonClicked = "";
+const homeLink = document.querySelector('.home');
+const oldLink = document.querySelector('.old');
+const newLink = document.querySelector('.new');
+const largeLink = document.querySelector('.large');
+const smallLink = document.querySelector('.small');
 
-buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    const type = button.dataset.type;
-    let buttonClicked = type;
-  })
+homeLink.addEventListener('click', () => {
+  document.querySelector(".card-section").innerHTML = "";
+  CreateTempleCard(temples);
 })
+
+oldLink.addEventListener('click', () => {
+  let filteredTemples = temples.filter(temple => {
+    const part = temple.dedicated.split(",");
+    const year = parseInt(part[0]);
+    return year <= 1900;
+  });
+  document.querySelector(".card-section").innerHTML = "";
+  CreateTempleCard(filteredTemples);
+});
+
+newLink.addEventListener('click', () => {
+  let filteredTemples = temples.filter(temple => {
+    const part = temple.dedicated.split(",");
+    const year = parseInt(part[0]);
+    return year >= 2000;
+  });
+  document.querySelector(".card-section").innerHTML = "";
+  CreateTempleCard(filteredTemples);
+});
+
+largeLink.addEventListener('click', () => {
+  let filteredTemples = temples.filter(temple => {
+    const squareFeet = temple.area;
+    return squareFeet >= 90000;
+  });
+  document.querySelector(".card-section").innerHTML = "";
+  CreateTempleCard(filteredTemples);
+});
+
+smallLink.addEventListener('click', () => {
+  let filteredTemples = temples.filter(temple => {
+    const squareFeet = temple.area;
+    return squareFeet <= 10000;
+  });
+  document.querySelector(".card-section").innerHTML = "";
+  CreateTempleCard(filteredTemples);
+});
+
 
 function CreateTempleCard(filterTemples) {
   filterTemples.forEach(temple => {
-    // document.querySelector(".card-section").innerHTML = "";
     let card = document.createElement("section");
     let name = document.createElement("h3");
     let location = document.createElement("p");
