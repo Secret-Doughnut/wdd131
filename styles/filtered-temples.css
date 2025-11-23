@@ -70,7 +70,7 @@ header p, h1 {
     display: block;
 }
 
-.navigation button {
+.navigation a {
     display: block;
     text-decoration: none;
     color: white;
@@ -83,7 +83,7 @@ header p, h1 {
     cursor: pointer;
 }
 
-.navigation button:hover {
+.navigation a:hover {
     background-color: rgb(207, 64, 64);
     border-color: rgb(7, 56, 59);
 }
