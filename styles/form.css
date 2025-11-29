@@ -24,6 +24,10 @@ label, fieldset {
     display: grid;
 }
 
+label, p {
+    margin-top: 20px;
+}
+
 .rating-stars {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -39,6 +43,7 @@ label, fieldset {
 
 .check-list label{
     display: flex;
+    margin: 7px;
 }
 
 textarea {
@@ -48,4 +53,17 @@ textarea {
 
 input[type="submit"] {
     justify-self: center;
+}
+
+select {
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+fieldset {
+    padding: 20px;
+}
+
+span {
+    padding-bottom: 5px;
 }

@@ -22,9 +22,9 @@
     <main>
         <form method="get" action="#" class="main-form">
             <fieldset>
-                <label>Date of Installation*
+                <label><span>Product Name*</span>
                     <select name="dropdown" id="drop" required>
-                        <option value="" disabled selected>Select a Product ...</option>
+                        <option value="" disabled selected>Choose a Product ...</option>
                         <option value="red">Red</option>
                         <option value="blue">Blue</option>
                         <option value="yellow">Yellow</option>
@@ -36,7 +36,6 @@
 
                 <div class="rating-stars">
                     <p>Overall Rating*</p>
-                    <label></label>
                     <input type="radio" name="stars" id="star-a" value="1" required>
                     <label for="star-a"></label>
                     <input type="radio" name="stars" id="star-b" value="2" required>
@@ -50,21 +49,21 @@
                 </div>
 
                 <div>
-                    <label>Date of Installation<input type="date" name="Thingie" id="why" required></label>
+                    <label><span>Date of Installation</span><input type="date" name="Thingie" id="why" required></label>
                 </div>
 
                 <div class="check-list">
-                    <p>Which features did you find useful in the product?</p>
-                    <p>(Check all that apply)</p>
+                    <p>Which features did you find useful in the product?<br><span>(Check all that apply)</span></p>
                     <label><input type="checkbox" name="editing" value="yes" id="so-many">Durability</label>
                     <label><input type="checkbox" name="editing" value="yes" id="thingies">Ease of Use</label>
                     <label><input type="checkbox" name="editing" value="yes" id="that-i">Performance</label>
                     <label><input type="checkbox" name="editing" value="yes" id="need-to-type">Design</label>
                 </div>
 
-                <label>Written Review (Optional)<textarea name="box" id="stop-with-the-ids"></textarea></label>
+                <label><span>Written Review (Optional)</span><textarea name="box"
+                        id="stop-with-the-ids"></textarea></label>
 
-                <label>Your Name (Optional)
+                <label><span>Your Name (Optional)</span>
                     <input type="text" name="username" id="placeholder-thingie">
                 </label>
                 <input type="submit" value="Post Review">
