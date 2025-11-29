@@ -1,0 +1,29 @@
+:root {
+    --top-spacing: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    justify-self: center;
+    background-color: rgb(167, 68, 68);
+    color: white;
+    margin-top: var(--top-spacing);
+}
+
+main {
+    justify-self: center;
+    margin-top: var(--top-spacing);
+}
+
+footer {
+    justify-self: center;
+    margin-top: var(--top-spacing);
+}
+
+label {
+    display: grid;
+}
