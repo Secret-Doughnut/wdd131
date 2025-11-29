@@ -1,7 +1,3 @@
-:root {
-    --top-spacing: 20px;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -11,19 +7,33 @@ h1 {
     justify-self: center;
     background-color: rgb(167, 68, 68);
     color: white;
-    margin-top: var(--top-spacing);
+    margin-top: 20px;
 }
 
 main {
     justify-self: center;
-    margin-top: var(--top-spacing);
+    margin-top: 20px;
 }
 
 footer {
     justify-self: center;
-    margin-top: var(--top-spacing);
+    margin-top: 20px;
 }
 
 label {
     display: grid;
+}
+
+.rating-stars {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-bottom: 10px;
+}
+
+.rating-stars label {
+    display: none;
+}
+
+.rating-stars span {
+    grid-column: 1/6;
+    padding-bottom: 10px;
 }
