@@ -20,6 +20,32 @@ footer {
     margin-top: 20px;
 }
 
-label {
+label, fieldset {
     display: grid;
+}
+
+.rating-stars {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.rating-stars label {
+    display: none;
+}
+
+.rating-stars p {
+    grid-column: 1/6;
+}
+
+.check-list label{
+    display: flex;
+}
+
+textarea {
+    width: 330px;
+    height: 80px;
+}
+
+input[type="submit"] {
+    justify-self: center;
 }
