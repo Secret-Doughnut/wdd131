@@ -40,17 +40,22 @@ if (select) {
 
 }
 
+console.log(mainContent);
+
 if (mainContent) {
     let counter = document.createElement('p');
     let visitNumber = Number(window.localStorage.getItem("times-visited")) || 0;
     
+
+    mainContent.appendChild(counter)
     visitNumber++;
+    localStorage.setItem("times-visited", visitNumber);
 
     if (visitNumber != 1) {
-        counter.textContent = `You have been here ${visitNumber} times!`;
+        counter.textContent = `You have submitted ${visitNumber} reviews! Thank you for your support!`;
     }
     else {
-        counter.textContent = `This is your first time to this website!`;
+        counter.textContent = `This is your first review! Thank you again for your support!`;
     }
     
 }
