@@ -3,11 +3,19 @@
     padding: 0;
 }
 
-h1 {
+h1, footer {
     justify-self: center;
     background-color: rgb(167, 68, 68);
     color: white;
     margin-top: 20px;
+    width: 475px;
+    height: 90px;
+    justify-items: center;
+}
+
+footer p{
+    font-size: x-large;
+    margin-bottom: 10px;
 }
 
 main {
@@ -33,10 +41,6 @@ label, p {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-.rating-stars label {
-    display: none;
-}
-
 .rating-stars p {
     grid-column: 1/6;
 }
@@ -47,15 +51,23 @@ label, p {
 }
 
 textarea {
-    width: 330px;
+    width: 100%;
     height: 80px;
 }
 
 input[type="submit"] {
     justify-self: center;
+    margin-top: 30px;
+    padding: 12px 20px;
+    width: 100%;
+    font-size: x-large;
 }
 
-select {
+input[type="checkbox"] {
+    width: 20px;
+}
+
+select, input[type="date"], input[type="text"] {
     padding: 12px 20px;
     font-size: 16px;
 }
@@ -66,4 +78,15 @@ fieldset {
 
 span {
     padding-bottom: 5px;
+}
+
+.check-list span {
+    margin-left: 7px;
+}
+
+.rating-stars label, .rating-stars input {
+    place-content: center;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
