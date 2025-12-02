@@ -58,6 +58,7 @@ label, p {
 .check-list span {
     position: relative;
     top: 7px;
+    margin-left: 7px;
 }
 
 textarea {
@@ -92,10 +93,6 @@ fieldset {
 
 span {
     padding-bottom: 5px;
-}
-
-.check-list span {
-    margin-left: 7px;
 }
 
 .rating-stars label, .rating-stars input {
