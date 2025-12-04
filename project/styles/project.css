@@ -10,16 +10,6 @@ img {
     justify-self: center;
 }
 
-.basic-needs div:nth-child(even) {
-    position: relative;
-    right: 10%;
-}
-
-.basic-needs div:nth-child(odd) {
-    position: relative;
-    left: 10%;
-}
-
 .basic-needs h2 {
     justify-self: center;
 }

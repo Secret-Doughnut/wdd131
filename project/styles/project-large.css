@@ -1,0 +1,13 @@
+@media screen and (min-width: 680px) {
+    .basic-needs div:nth-child(even) {
+    position: relative;
+    right: 10%;
+}
+
+.basic-needs div:nth-child(odd) {
+    position: relative;
+    left: 10%;
+}
+
+}
+
