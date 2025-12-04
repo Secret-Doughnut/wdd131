@@ -7,14 +7,48 @@ img {
     max-width: 500px;
     background-color: rgb(243, 218, 218);
     margin: 20px;
+    justify-self: center;
 }
 
-/* I am trying to have the second and fourth cards slide over and hang out on the right hand side of the screen, but I'm not sure how to do that. */
+.basic-needs div:nth-child(even) {
+    position: relative;
+    right: 10%;
+}
+
 .basic-needs div:nth-child(odd) {
     position: relative;
-    left: 0;
+    left: 10%;
 }
 
-.basic-needs p {
-    padding: 10px 2px 0px 30px;
+.basic-needs h2 {
+    justify-self: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    justify-self: center;
+    background-color: lightblue;
+    width: 73%;
+}
+
+footer {
+    background-color: lightblue;
+    justify-self: center;
+    width: 73%;
+    height: 80px;
+}
+
+footer p {
+    display: flex;
+    position: relative;
+    height: 10px;
+    align-items: center;
+    justify-self: center;
+    font-size: x-large;
+    padding: 10px;
+}
+
+nav {
+    align-self: center;
 }
