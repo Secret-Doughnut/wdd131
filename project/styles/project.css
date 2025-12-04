@@ -1,13 +1,18 @@
 img {
-    width: 188px;
+    display: grid;
+    width: 250px;
 }
 
-.basic-needs div {
-    display: flex;
-    max-width: 500px;
+.basic-needs p {
+    font-size: 18px;
+    padding: 10px;
     background-color: rgb(243, 218, 218);
-    margin: 20px;
+    max-width: 500px;
+}
+
+.basic-needs img, .basic-needs p {
     justify-self: center;
+
 }
 
 .basic-needs h2 {
@@ -16,17 +21,19 @@ img {
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     justify-self: center;
     background-color: lightblue;
-    width: 73%;
+    width: 89%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 footer {
     background-color: lightblue;
     justify-self: center;
-    width: 73%;
-    height: 80px;
+    width: 89%;
+    height: 140px;
 }
 
 footer p {
@@ -37,8 +44,27 @@ footer p {
     justify-self: center;
     font-size: x-large;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
-nav {
+.naviagation {
     align-self: center;
+    font-size: x-large;
+    display: none;
+}
+
+#menu {
+    position: relative;
+    font-size: medium;
+    background-color: transparent;
+    border: transparent;
+}
+
+#menu::before {
+    content: "☰";
+    font-size: xx-large;
+}
+
+#menu.open::before {
+    content: "❌";
 }
