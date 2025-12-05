@@ -19,7 +19,7 @@ img {
     justify-self: center;
 }
 
-header {
+.top-bar {
     display: flex;
     justify-content: space-between;
     justify-self: center;
@@ -48,8 +48,6 @@ footer p {
 }
 
 .naviagation {
-    align-self: center;
-    font-size: x-large;
     display: none;
 }
 
@@ -68,3 +66,68 @@ footer p {
 #menu.open::before {
     content: "❌";
 }
+
+.naviagation.open {
+    display: flex;
+    justify-content: center;
+}
+
+.naviagation.open a:hover {
+    background-color: navy;
+}
+
+.naviagation a:hover {
+    color: white;
+    background-color: rgb(47, 77, 87);
+}
+
+ul {
+    align-items: center;
+    list-style: none;
+    padding-left: 20px;
+    font-size: xx-large;
+}
+
+ul a {
+    display: block;
+    padding: 20px;
+}
+
+.naviagation.open {
+    position: relative;
+    justify-self: center;
+    background-color: lightblue;
+    width: 92%;
+}
+
+/* .naviagation.open {
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: 22px;
+    width: 90.5%;
+}
+
+.naviagation a:hover {
+    color: white;
+    background-color: rgb(47, 77, 87);
+}
+
+.naviagation ul {
+    justify-content: center;
+}
+
+.naviagation a {
+    text-decoration: none;
+    color: black;
+    font-size: xx-large;
+    text-align: center;
+    padding: 7px;
+}
+
+ul {
+    list-style: none;
+    font-size: xx-large;
+    background-color: lightblue;
+    padding-left: 0;
+} */

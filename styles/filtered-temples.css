@@ -65,10 +65,6 @@ header p, h1 {
     display: none;
 }
 
-li {
-    display: flex;
-}
-
 .navigation.open {
     display: block;
 }

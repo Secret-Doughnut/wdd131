@@ -13,16 +13,21 @@
     <link rel="stylesheet" href="styles/project.css">
     <link rel="stylesheet" href="styles/project-large.css">
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/project.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>Bunny</h1>
-        <button aria-label="hamburger menu" id="menu"></button>
+        <div class="top-bar">
+            <h1>Bunny</h1>
+            <button aria-label="hamburger menu" id="menu"></button>
+        </div>
         <nav class="naviagation">
-            <a href="project1.html" class="current">Bunny</a>
-            <a href="project2.html">Alligator</a>
-            <a href="project3.html">Axolotl</a>
+            <ul>
+                <li><a href="project1.html" class="current" aria-current="page">Bunny</a></li>
+                <li><a href="project2.html">Alligator</a></li>
+                <li><a href="project3.html">Axolotl</a></li>
+            </ul>
         </nav>
     </header>
     <main>

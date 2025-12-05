@@ -1,6 +1,6 @@
 @media screen and (min-width: 680px) {
     
-    .basic-needs div:nth-child(even) {
+.basic-needs div:nth-child(even) {
     position: relative;
     right: 10%;
 }
@@ -21,6 +21,28 @@ img {
     justify-self: center;
 }
 
+#menu {
+        display: none;
+    }
+
+#menu.open::before {
+        display: none;
+    }
+
+.naviagation {
+    display: flex;
+    align-self: center;
+    font-size: x-large;
+    padding: 20px;
+}
+
+.naviagation a {
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(37, 2, 2);
+}
 
 }
 
