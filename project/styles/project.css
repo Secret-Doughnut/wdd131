@@ -72,13 +72,17 @@ footer p {
     justify-content: center;
 }
 
-.naviagation.open a:hover {
-    background-color: navy;
-}
-
-.naviagation a:hover {
+.naviagation li:hover {
     color: white;
     background-color: rgb(47, 77, 87);
+}
+
+.naviagation label:hover, .naviagation a:hover {
+    color: white;
+}
+
+.current:hover a, .current:hover label {
+    color: white;
 }
 
 ul {
@@ -100,34 +104,14 @@ ul a {
     width: 92%;
 }
 
-/* .naviagation.open {
-    display: block;
-    position: absolute;
-    top: 90px;
-    left: 22px;
-    width: 90.5%;
-}
-
-.naviagation a:hover {
-    color: white;
-    background-color: rgb(47, 77, 87);
-}
-
-.naviagation ul {
-    justify-content: center;
-}
-
-.naviagation a {
+ul a {
     text-decoration: none;
-    color: black;
-    font-size: xx-large;
-    text-align: center;
-    padding: 7px;
+    color: rgb(0, 0, 51);
 }
 
-ul {
-    list-style: none;
-    font-size: xx-large;
-    background-color: lightblue;
-    padding-left: 0;
-} */
+.current label{
+    position: absolute;
+    font-size: 20px;
+    left: 130px;
+    color: rgb(0, 0, 51);
+}
