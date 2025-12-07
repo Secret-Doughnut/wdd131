@@ -73,15 +73,10 @@ footer p {
 }
 
 .naviagation li:hover {
-    color: white;
     background-color: rgb(47, 77, 87);
 }
 
-.naviagation label:hover, .naviagation a:hover {
-    color: white;
-}
-
-.current:hover a, .current:hover label {
+.naviagation a:hover {
     color: white;
 }
 
@@ -109,17 +104,19 @@ ul a {
     color: rgb(0, 0, 51);
 }
 
-.current label{
-    position: absolute;
-    font-size: 20px;
-    left: 130px;
-    color: rgb(0, 0, 51);
-}
-
 .basic-needs p {
     height: 100px;
     display: grid;
     align-items: center;
     text-align: center;
     width: 1000px;
+}
+
+.current {
+    pointer-events: none;
+}
+
+h1 {
+    position: relative;
+    top: 10px;
 }

@@ -40,19 +40,23 @@
     color: rgb(37, 2, 2);
 }
 
-header ul{
-    display: flex;
-    position: relative;
-    bottom: 120px;
-    left: 35%;
-}
-
 header {
     height: 100px;
+    display: flex;
+}
+
+header ul {
+    display: flex;
+}
+
+.naviagation {
+    background-color: lightblue;
+    height: 60px;
 }
 
 .basic-needs p {
     height: 200px;
 }
+
 
 }
