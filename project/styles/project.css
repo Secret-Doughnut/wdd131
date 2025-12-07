@@ -1,6 +1,6 @@
 img {
     display: grid;
-    width: 250px;
+    width: 225px;
 }
 
 .basic-needs p {
@@ -114,4 +114,12 @@ ul a {
     font-size: 20px;
     left: 130px;
     color: rgb(0, 0, 51);
+}
+
+.basic-needs p {
+    height: 100px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    width: 1000px;
 }

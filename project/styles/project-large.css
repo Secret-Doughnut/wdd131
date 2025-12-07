@@ -10,10 +10,6 @@
     left: 10%;
 }
 
-img {
-    width: 188px;
-}
-
 .basic-needs div {
     display: flex;
     max-width: 500px;
@@ -53,6 +49,10 @@ header ul{
 
 header {
     height: 100px;
+}
+
+.basic-needs p {
+    height: 200px;
 }
 
 }
