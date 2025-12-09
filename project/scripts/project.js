@@ -21,14 +21,15 @@ const bunnies = [
     }
 ]
 
-const snakes = [
+const alligators = [
     {
-        snakeText: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        snakeImage: "hold-on"
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        image: "hold-on",
+        alt: "Not in existence"
     }
 ]
 
-const axolotl = [
+const axolotls = [
     {
         axolotlText: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         axolotlImage: "another-hold-on"
@@ -36,8 +37,19 @@ const axolotl = [
 ]
 
 let cardHolder = document.querySelector(".basic-needs");
+let bunnyCard = document.querySelector("#bunny");
+let alligatorCard = document.querySelector("#alligator");
+let axolotlCard = document.querySelector("#axolotl");
 
-createAnimalFactCard(bunnies);
+if (bunnyCard) {
+    createAnimalFactCard(bunnies);
+}
+else if (alligatorCard) {
+    createAnimalFactCard(alligators);
+}
+else if (axolotlCard) {
+    createAnimalFactCard(axolotls);
+};
 
 const hamburgerButton = document.querySelector('#menu');
 const navigation = document.querySelector('.naviagation');

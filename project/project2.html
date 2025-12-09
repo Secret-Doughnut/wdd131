@@ -13,33 +13,35 @@
     <link rel="stylesheet" href="styles/project.css">
     <link rel="stylesheet" href="styles/project-large.css">
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/project.js" defer></script>
 </head>
 
 <body>
-    <div>
-        <img src="images/profile.webp" alt="Placeholder image">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aut similique! Reprehenderit dolor
-            earum, aliquam, corrupti culpa iure necessitatibus voluptatum magnam natus numquam exercitationem
-            reiciendis quaerat alias officia explicabo suscipit.</p>
-    </div>
-    <div>
-        <img src="images/gazing-into-starry-sky.png" alt="Second Placeholder image">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id distinctio fugiat porro magni dolorem,
-            dolore laboriosam eius, nihil voluptate et, praesentium nam tempora suscipit voluptatem? Ut
-            recusandae quod adipisci quia.</p>
-    </div>
-    <div>
-        <img src="images/greeting-on-a-peaceful-day.png" alt="Placeholder">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam autem perferendis architecto magni
-            natus repellat soluta, asperiores iusto inventore debitis deserunt et tempore voluptates dolores,
-            quibusdam unde, tempora minus explicabo!</p>
-    </div>
-    <div>
-        <img src="images/hi-friend.png" alt="placeholder">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae natus, quia voluptatum odit libero
-            quos. Fugiat mollitia quo quidem rem accusantium, voluptate illo itaque inventore quod officia
-            veritatis? Labore, est.</p>
-    </div>
+    <header>
+        <div class="top-bar">
+            <h1>Alligator Facts</h1>
+            <button aria-label="hamburger menu" id="menu"></button>
+        </div>
+        <nav class="naviagation">
+            <ul>
+                <li>
+                    <a href="project1.html">Bunny</a>
+                </li>
+                <li class="current" id="alligator"><a href="project2.html" aria-current="page">Alligator</a></li>
+                <li><a href="project3.html">Axolotl</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="basic-needs">
+            <h2>Fact Cards</h2>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span>2025</span>, Dustin Cook, USA</p>
+        <p id="lastModified">Last modified on placeholder date</p>
+    </footer>
+
 </body>
 
 </html>

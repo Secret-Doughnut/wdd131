@@ -120,3 +120,19 @@ h1 {
     position: relative;
     top: 10px;
 }
+
+.small-game {
+    margin-top: 90px;
+    margin-bottom: 80px;
+    width: 355px;
+    justify-self: center;
+}
+
+.small-game textarea {
+    display: block;
+    height: 200px;
+    width: 350px;
+    resize: none;
+    opacity: 100;
+}
+
