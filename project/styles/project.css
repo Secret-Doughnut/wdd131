@@ -105,11 +105,10 @@ ul a {
 }
 
 .basic-needs p {
-    height: 100px;
     display: grid;
     align-items: center;
     text-align: center;
-    width: 1000px;
+    min-height: 180px;
 }
 
 .current {
@@ -130,9 +129,34 @@ h1 {
 
 .small-game textarea {
     display: block;
-    height: 200px;
-    width: 350px;
     resize: none;
     opacity: 100;
+    justify-self: center;
+    width: 270px;
+    height: 300px;
 }
 
+.small-game p {
+    justify-self: center;
+    position: absolute;
+    font-size: 100px;
+    margin-top: 200px;
+}
+
+.small-game img {
+    position: relative;
+    pointer-events: none;
+}
+
+.bunny-player {
+    left: 50px;
+    top: 360px;
+    width: 60px;
+    /* transform: rotate(-45deg); */
+}
+
+.fox-enemy {
+   left: 240px;
+   top: 290px;
+   width: 70px;
+}
