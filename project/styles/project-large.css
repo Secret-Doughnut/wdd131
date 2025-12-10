@@ -1,16 +1,16 @@
 @media screen and (min-width: 680px) {
     
-.basic-needs div:nth-child(even) {
+.card:nth-child(even) {
     position: relative;
     right: 10%;
 }
 
-.basic-needs div:nth-child(odd) {
+.card:nth-child(odd) {
     position: relative;
     left: 10%;
 }
 
-.basic-needs div {
+.card {
     display: flex;
     max-width: 500px;
     margin: 20px;
@@ -53,9 +53,4 @@ header ul {
     background-color: lightblue;
     height: 60px;
 }
-
-.basic-needs p {
-    height: 200px;
-}
-
 }
