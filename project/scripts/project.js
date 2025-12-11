@@ -60,37 +60,37 @@ const snakes = [
     }
 ]
 
-const axolotls = [
-    {
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        image: "images/axolotl-placeholder.webp",
-        alt: "placeholder",
-        source: "Placeholder Text",
-        nameOfSource: "Placeholder once again",
-        imageCredit: "placeholder"
-    },
-    {
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        image: "images/axolotl-placeholder.webp",
-        alt: "placeholder",
-        source: "Placeholder Text",
-        nameOfSource: "Placeholder once again",
-        imageCredit: "placeholder"
-    },
-    {
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        image: "images/axolotl-placeholder.webp",
-        alt: "placeholder",
-        source: "Placeholder Text",
-        nameOfSource: "Placeholder once again",
-        imageCredit: "placeholder"
-    }
-]
+// const axolotls = [
+//     {
+//         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+//         image: "images/axolotl-placeholder.webp",
+//         alt: "placeholder",
+//         source: "Placeholder Text",
+//         nameOfSource: "Placeholder once again",
+//         imageCredit: "placeholder"
+//     },
+//     {
+//         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+//         image: "images/axolotl-placeholder.webp",
+//         alt: "placeholder",
+//         source: "Placeholder Text",
+//         nameOfSource: "Placeholder once again",
+//         imageCredit: "placeholder"
+//     },
+//     {
+//         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+//         image: "images/axolotl-placeholder.webp",
+//         alt: "placeholder",
+//         source: "Placeholder Text",
+//         nameOfSource: "Placeholder once again",
+//         imageCredit: "placeholder"
+//     }
+// ]
 
 let cardHolder = document.querySelector(".basic-needs");
 let bunnyCard = document.querySelector("#bunny");
 let snakeCard = document.querySelector("#snake");
-let axolotlCard = document.querySelector("#axolotl");
+// let axolotlCard = document.querySelector("#axolotl");
 let linkBox = document.querySelector(".links");
 let creditBox = document.querySelector(".credits")
 
@@ -106,10 +106,10 @@ else if (snakeCard) {
     createAnimalFactCard(snakes);
     addFactSource(snakes);
 }
-else if (axolotlCard) {
-    createAnimalFactCard(axolotls);
-    addFactSource(axolotls);
-};
+// else if (axolotlCard) {
+//     createAnimalFactCard(axolotls);
+//     addFactSource(axolotls);
+// };
 
 if (creditBox) {
     createCreditCard(bunnies);
