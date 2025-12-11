@@ -5,6 +5,7 @@ const bunnies = [
         alt: "Bunny eating grass hay",
         source: "https://youtu.be/-Bre_hCCLPQ?&t=74",
         nameOfSource: "WHAT TO FEED YOUR PET RABBIT (On YouTube)",
+        imageCredit: "<a href=\"https://www.pexels.com/photo/gray-rabbit-1461876/\">Photo by Leanè Jacobs</a>"
     },
     {
         text: "Contrary to popular belief, bunnies can't eat that many carrots without getting sick. Carrots have a lot of sugar for a bunny, so it's best to treat carrots as a TREAT, rather then a normal food item.",
@@ -12,6 +13,7 @@ const bunnies = [
         alt: "Carrots",
         source: "https://www.reddit.com/r/Rabbits/comments/awthzk/can_i_feed_my_bunnys_carrots/",
         nameOfSource: "Can i feed my bunnys carrots? (Reddit)",
+        imageCredit: "<a href=\"https://www.pexels.com/photo/orange-carrots-on-table-143133/\">Photo by mali maeder</a>"
     },
     {
         text: "Bunnies do not have paw pads on their feet, which might be due to wild bunnies living in areas with soft terrain, like grassy fields and forests. So, you'll need to make sure to have carpet for pet bunnies to run on.",
@@ -19,6 +21,7 @@ const bunnies = [
         alt: "Bunny paw",
         source: "https://www.rabbitholehay.com/blogs/rabbit-hole-hay-blog/do-rabbits-have-paw-pads",
         nameOfSource: "Do Rabbits Have Paw Pads or Not? (Rabbit Hole Hay)",
+        imageCredit: "<a href=\"https://unsplash.com/photos/girl-holding-white-rabbit-zokLvUcShAc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\\\">Photo by William Daigneault</a>"
     },
     {
         text: "Winter is a very hard time for wild bunnies, since most of the greenery is either gone or covered with snow. So, they turn to whatever plants they can find, even if it's pieces of wood, like bark and twigs.",
@@ -26,6 +29,7 @@ const bunnies = [
         alt: "Bunny outside in snow",
         source: "https://www.rabbitholehay.com/blogs/rabbit-hole-hay-blog/what-do-rabbits-eat-during-the-winter",
         nameOfSource: "Winter Rabbit Diet: What Do They Eat? (Rabbit Hole Hay)",
+        imageCredit: "<a href=\"https://www.pexels.com/photo/snow-hare-in-winter-landscape-29672772/\">Photo by Stephen Leonardi</a>"
     }
 ]
 
@@ -35,21 +39,24 @@ const snakes = [
         image: "images/snake-food.webp",
         alt: "Snake placeholder image",
         source: "https://www.petmd.com/reptile/nutrition/what-do-pet-snakes-eat",
-        nameOfSource: "What Do Snakes Eat? (PetMD)"
+        nameOfSource: "What Do Snakes Eat? (PetMD)",
+        imageCredit: "<a href=\"https://www.pexels.com/photo/close-up-shot-of-a-snake-eating-fish-12961010/\">Photo by Ольга Бочкарева</a>"
     },
     {
         text: "There are some snakes who spend most of their life underwater. They still need air though. So, they need to regularly come up to the surface to get that air. These snakes can stay underwater for around 30 minutes on average. Some snakes can stay underwater for around 2 hours!",
         image: "images/sea-snake.webp",
         alt: "Snake placeholder image",
         source: "https://youtu.be/nlLhHduDbgs&t=40",
-        nameOfSource: "Sea Snakes | How Do Snakes Survive in the Ocean? (YouTube)"
+        nameOfSource: "Sea Snakes | How Do Snakes Survive in the Ocean? (YouTube)",
+        imageCredit: "<a href=\"https://www.pexels.com/photo/snake-near-people-diving-7169290/\">Photo by Graham Henderson</a>"
     },
     {
         text: "While snakes can smell with their noses, they mainly use their tongues to smell. When they stick their tongue out, the tongue collect scent particles and brings it to the area where they discern smell. Which is commonly called the \"Jacobson's organ\".",
         image: "images/snake-tongue.webp",
         alt: "Snake placeholder image",
         source: "https://youtu.be/fQaOrxS5iNc&t=32",
-        nameOfSource: "How Do Snakes Smell With Their Tongues? | Amazing Animal Senses! | SciShow Kids (YouTube)"
+        nameOfSource: "How Do Snakes Smell With Their Tongues? | Amazing Animal Senses! | SciShow Kids (YouTube)",
+        imageCredit: "<a href=\"https://www.pexels.com/photo/close-up-of-a-snake-on-the-sand-16879408/\">Photo by Robert So</a>"
     }
 ]
 
@@ -59,28 +66,24 @@ const axolotls = [
         image: "images/axolotl-placeholder.webp",
         alt: "placeholder",
         source: "Placeholder Text",
-        nameOfSource: "Placeholder once again"
+        nameOfSource: "Placeholder once again",
+        imageCredit: "placeholder"
     },
     {
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         image: "images/axolotl-placeholder.webp",
         alt: "placeholder",
         source: "Placeholder Text",
-        nameOfSource: "Placeholder once again"
+        nameOfSource: "Placeholder once again",
+        imageCredit: "placeholder"
     },
     {
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         image: "images/axolotl-placeholder.webp",
         alt: "placeholder",
         source: "Placeholder Text",
-        nameOfSource: "Placeholder once again"
-    },
-    {
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        image: "images/axolotl-placeholder.webp",
-        alt: "placeholder",
-        source: "Placeholder Text",
-        nameOfSource: "Placeholder once again"
+        nameOfSource: "Placeholder once again",
+        imageCredit: "placeholder"
     }
 ]
 
@@ -89,6 +92,7 @@ let bunnyCard = document.querySelector("#bunny");
 let snakeCard = document.querySelector("#snake");
 let axolotlCard = document.querySelector("#axolotl");
 let linkBox = document.querySelector(".links");
+let creditBox = document.querySelector(".credits")
 
 
 let factCounter = 0;
@@ -106,6 +110,9 @@ else if (axolotlCard) {
     createAnimalFactCard(axolotls);
     addFactSource(axolotls);
 };
+
+createCreditCard(bunnies);
+createCreditCard(snakes);
 
 const hamburgerButton = document.querySelector('#menu');
 const navigation = document.querySelector('.naviagation');
@@ -152,5 +159,21 @@ function addFactSource(animals) {
 
 
         linkBox.appendChild(sourceLink);
+    });
+}
+
+function createCreditCard(animals) {
+    animals.forEach(animal => {
+        let credit = document.createElement("div");
+        let imagePreview = document.createElement("img");
+        
+        credit.innerHTML = animal.imageCredit;
+        imagePreview.setAttribute("src", animal.image);
+        imagePreview.setAttribute("alt", animal.alt);
+        imagePreview.setAttribute("loading", "lazy");
+
+        
+        credit.appendChild(imagePreview);
+        creditBox.appendChild(credit);
     });
 }
