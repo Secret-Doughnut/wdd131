@@ -12,9 +12,10 @@ img {
     align-items: center;
     text-align: center;
     min-height: 180px;
+    justify-self: center;
 }
 
-.basic-needs img, .basic-needs p {
+.basic-needs img {
     justify-self: center;
 
 }
@@ -74,6 +75,10 @@ footer p {
 .naviagation.open {
     display: flex;
     justify-content: center;
+    position: relative;
+    justify-self: center;
+    background-color: lightblue;
+    width: 92%;
 }
 
 .naviagation li:hover {
@@ -94,23 +99,8 @@ ul {
 ul a {
     display: block;
     padding: 20px;
-}
-
-.naviagation.open {
-    position: relative;
-    justify-self: center;
-    background-color: lightblue;
-    width: 92%;
-}
-
-ul a {
     text-decoration: none;
     color: rgb(0, 0, 51);
-}
-
-
-.current {
-    pointer-events: none;
 }
 
 h1 {
@@ -155,11 +145,11 @@ h1 {
     padding: 20px;
     margin-left: 5px;
     margin-bottom: 20px;
-    background-color: rgba(5, 1, 1, 0.466);
+    background-color: rgba(0, 0, 0, 0.637);
     border-radius: 50px;
     margin-right: 5px;
     text-decoration: none;
-    color: rgb(250, 250, 250);
+    color: rgb(255, 255, 255);
 }
 
 .notice a {

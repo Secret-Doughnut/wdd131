@@ -111,8 +111,10 @@ else if (axolotlCard) {
     addFactSource(axolotls);
 };
 
-createCreditCard(bunnies);
-createCreditCard(snakes);
+if (creditBox) {
+    createCreditCard(bunnies);
+    createCreditCard(snakes);
+}
 
 const hamburgerButton = document.querySelector('#menu');
 const navigation = document.querySelector('.naviagation');
