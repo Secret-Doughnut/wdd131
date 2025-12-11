@@ -1,29 +1,29 @@
 const bunnies = [
     {
         text: "A healthy bunny's diet consists of a lot of hay, leafy greens (such as ROMAINE lettuce and bok choy leaves), herbs (like cilantro and mint) and a little bit of treats (like apples and bananas).",
-        image: "images/test-bunny-one.webp",
-        alt: "bunny picture 1",
+        image: "images/hay-bunny.webp",
+        alt: "Bunny eating grass hay",
         source: "https://youtu.be/-Bre_hCCLPQ?&t=74",
         nameOfSource: "WHAT TO FEED YOUR PET RABBIT (On YouTube)",
     },
     {
         text: "Contrary to popular belief, bunnies can't eat that many carrots without getting sick. Carrots have a lot of sugar for a bunny, so it's best to treat carrots as a TREAT, rather then a normal food item.",
-        image: "images/test-bunny-two.webp",
-        alt: "bunny picture 2",
+        image: "images/carrots.webp",
+        alt: "Carrots",
         source: "https://www.reddit.com/r/Rabbits/comments/awthzk/can_i_feed_my_bunnys_carrots/",
         nameOfSource: "Can i feed my bunnys carrots? (Reddit)",
     },
     {
         text: "Bunnies do not have paw pads on their feet, which might be due to wild bunnies living in areas with soft terrain, like grassy fields and forests. So, you'll need to make sure to have carpet for pet bunnies to run on.",
-        image: "images/test-bunny-three.webp",
-        alt: "bunny picture 3",
+        image: "images/bunny-paw.webp",
+        alt: "Bunny paw",
         source: "https://www.rabbitholehay.com/blogs/rabbit-hole-hay-blog/do-rabbits-have-paw-pads",
         nameOfSource: "Do Rabbits Have Paw Pads or Not? (Rabbit Hole Hay)",
     },
     {
         text: "Winter is a very hard time for wild bunnies, since most of the greenery is either gone or covered with snow. So, they turn to whatever plants they can find, even if it's pieces of wood, like bark and twigs.",
-        image: "images/test-bunny-four.webp",
-        alt: "bunny picture 4",
+        image: "images/winter-bunny.webp",
+        alt: "Bunny outside in snow",
         source: "https://www.rabbitholehay.com/blogs/rabbit-hole-hay-blog/what-do-rabbits-eat-during-the-winter",
         nameOfSource: "Winter Rabbit Diet: What Do They Eat? (Rabbit Hole Hay)",
     }
@@ -31,39 +31,53 @@ const bunnies = [
 
 const snakes = [
     {
-        text: "Snakes are carnivores",
-        image: "images/snake-placeholder.webp",
-        alt: "Not in existence",
+        text: "Snakes are carnivores, meaning that they eat animals like mice and chicks, instead of fruits and vegetables. They also don't eat as often as other animals do, with some eating as often as twice a week and some others as infrequently as a few times per month.",
+        image: "images/snake-food.webp",
+        alt: "Snake placeholder image",
         source: "https://www.petmd.com/reptile/nutrition/what-do-pet-snakes-eat",
         nameOfSource: "What Do Snakes Eat? (PetMD)"
     },
     {
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        image: "images/snake-placeholder.webp",
-        alt: "Not in existence",
-        source: "Placeholder Text",
-        nameOfSource: "Placeholder once again"
+        text: "There are some snakes who spend most of their life underwater. They still need air though. So, they need to regularly come up to the surface to get that air. These snakes can stay underwater for around 30 minutes on average. Some snakes can stay underwater for around 2 hours!",
+        image: "images/sea-snake.webp",
+        alt: "Snake placeholder image",
+        source: "https://youtu.be/nlLhHduDbgs&t=40",
+        nameOfSource: "Sea Snakes | How Do Snakes Survive in the Ocean? (YouTube)"
     },
     {
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        image: "images/snake-placeholder.webp",
-        alt: "Not in existence",
-        source: "Placeholder Text",
-        nameOfSource: "Placeholder once again"
-    },
-    {
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        image: "images/snake-placeholder.webp",
-        alt: "Not in existence",
-        source: "Placeholder Text",
-        nameOfSource: "Placeholder once again"
+        text: "While snakes can smell with their noses, they mainly use their tongues to smell. When they stick their tongue out, the tongue collect scent particles and brings it to the area where they discern smell. Which is commonly called the \"Jacobson's organ\".",
+        image: "images/snake-tongue.webp",
+        alt: "Snake placeholder image",
+        source: "https://youtu.be/fQaOrxS5iNc&t=32",
+        nameOfSource: "How Do Snakes Smell With Their Tongues? | Amazing Animal Senses! | SciShow Kids (YouTube)"
     }
 ]
 
 const axolotls = [
     {
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        image: "another-hold-on",
+        image: "images/axolotl-placeholder.webp",
+        alt: "placeholder",
+        source: "Placeholder Text",
+        nameOfSource: "Placeholder once again"
+    },
+    {
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        image: "images/axolotl-placeholder.webp",
+        alt: "placeholder",
+        source: "Placeholder Text",
+        nameOfSource: "Placeholder once again"
+    },
+    {
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        image: "images/axolotl-placeholder.webp",
+        alt: "placeholder",
+        source: "Placeholder Text",
+        nameOfSource: "Placeholder once again"
+    },
+    {
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        image: "images/axolotl-placeholder.webp",
         alt: "placeholder",
         source: "Placeholder Text",
         nameOfSource: "Placeholder once again"
